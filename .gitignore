@@ -1,0 +1,26 @@
+# Dependencies
+frontend/node_modules/
+backend/target/
+
+# Build artifacts
+frontend/dist/
+frontend/dist-ssr/
+backend/build/
+
+# Logs
+*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+
+# IDE & Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Misc
+*.local
