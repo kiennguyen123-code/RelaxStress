@@ -24,3 +24,5 @@ frontend/yarn-debug.log*
 
 # Misc
 *.local
+
+cloudflared.exe

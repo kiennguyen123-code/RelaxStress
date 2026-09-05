@@ -5,7 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true, // Cho phép điện thoại cùng mạng Wifi truy cập trực tiếp
+    host: true,
     port: 5173,
+    allowedHosts: true, // Cho phép truy cập từ mọi domain bên ngoài (Cloudflare tunnel, ngrok, v.v.)
   },
 })
