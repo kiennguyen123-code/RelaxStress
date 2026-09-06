@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- GitHub Pages SPA fix: redirect back to index with the path in query -->
+    <script>
+      // Single Page App redirect trick for GitHub Pages
+      // Source: https://github.com/rafgraph/spa-github-pages
+      var segmentCount = 1; // 1 = repo is at /RelaxStress/
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    Đang chuyển hướng...
+  </body>
+</html>

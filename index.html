@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/RelaxStress/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GitHub Pages SPA routing fix -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+
+    <title>RelaxStress — Thư Giãn & Giảm Căng Thẳng</title>
+    <meta name="description" content="Ứng dụng web hỗ trợ theo dõi tâm trạng, giảm căng thẳng và đề xuất các bài tập thư giãn cá nhân hóa. Thiền định, hít thở, chánh niệm." />
+    <meta name="theme-color" content="#4a9e83" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="RelaxStress — Thư Giãn & Giảm Căng Thẳng" />
+    <meta property="og:description" content="Theo dõi tâm trạng, giảm căng thẳng với bài tập thiền định và hít thở." />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/RelaxStress/assets/index-CrDGlywr.js"></script>
+    <link rel="stylesheet" crossorigin href="/RelaxStress/assets/index-C9f_66n8.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
